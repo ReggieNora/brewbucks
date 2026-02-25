@@ -431,14 +431,14 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  max-width: 900px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 @media (min-width: 600px) {
   .featured-coffees__grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 48px;
   }
 }
 
@@ -452,7 +452,7 @@ ul {
 }
 
 .coffee-bag-visual {
-  max-width: 600px;
+  max-width: 100%;
   margin: 0 auto 20px;
 }
 
@@ -629,7 +629,7 @@ ul {
 }
 
 .showcase-item__image {
-  max-width: 840px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
