@@ -339,7 +339,7 @@ ul {
   padding: 140px 0 80px;
   text-align: center;
   position: relative;
-  background: url('../images/hero-bg.jpg') center/cover no-repeat var(--bg-primary);
+  background: url('../images/hero-bg.png') center/cover no-repeat var(--bg-primary);
 }
 
 .hero-home::before {
