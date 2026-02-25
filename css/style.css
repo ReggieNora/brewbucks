@@ -237,6 +237,65 @@ ul {
   z-index: 101;
 }
 
+/* Wallet Button */
+.nav__wallet {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+}
+
+.nav__wallet:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-primary);
+  background: var(--accent-glow);
+}
+
+.nav__wallet--connected {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  background: var(--accent-glow);
+}
+
+.nav__wallet--connected:hover {
+  border-color: #e87c7c;
+  color: #e87c7c;
+  background: rgba(232, 124, 124, 0.1);
+}
+
+.nav__wallet-icon {
+  flex-shrink: 0;
+}
+
+.nav__wallet-label {
+  font-family: var(--font-body);
+}
+
+.nav__wallet--connected .nav__wallet-label {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 767px) {
+  .nav__wallet {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    gap: 6px;
+  }
+
+  .nav__wallet-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
 .nav__cart {
   position: relative;
   color: var(--text-secondary);

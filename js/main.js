@@ -7,6 +7,103 @@
   'use strict';
 
   // ===========================
+  // Wallet Connection (Phantom / Solana)
+  // ===========================
+  var walletBtn = document.getElementById('walletBtn');
+  var walletLabel = document.getElementById('walletLabel');
+  var connectedWallet = null;
+
+  function truncateAddress(address) {
+    return address.slice(0, 4) + '...' + address.slice(-4);
+  }
+
+  function setWalletConnected(publicKey) {
+    connectedWallet = publicKey;
+    var addr = publicKey.toString();
+    walletLabel.textContent = truncateAddress(addr);
+    walletBtn.classList.add('nav__wallet--connected');
+    walletBtn.setAttribute('aria-label', 'Wallet connected: ' + addr);
+    localStorage.setItem('brewbucks_wallet_connected', 'true');
+  }
+
+  function setWalletDisconnected() {
+    connectedWallet = null;
+    walletLabel.textContent = 'Connect Wallet';
+    walletBtn.classList.remove('nav__wallet--connected');
+    walletBtn.setAttribute('aria-label', 'Connect wallet');
+    localStorage.removeItem('brewbucks_wallet_connected');
+  }
+
+  function getPhantomProvider() {
+    if (window.solana && window.solana.isPhantom) {
+      return window.solana;
+    }
+    return null;
+  }
+
+  function connectWallet() {
+    var provider = getPhantomProvider();
+    if (!provider) {
+      showToast('Phantom wallet not found. Please install it from phantom.app');
+      return;
+    }
+
+    provider.connect()
+      .then(function (resp) {
+        setWalletConnected(resp.publicKey);
+        showToast('Wallet connected');
+      })
+      .catch(function () {
+        showToast('Connection cancelled');
+      });
+  }
+
+  function disconnectWallet() {
+    var provider = getPhantomProvider();
+    if (provider) {
+      provider.disconnect();
+    }
+    setWalletDisconnected();
+    showToast('Wallet disconnected');
+  }
+
+  if (walletBtn) {
+    walletBtn.addEventListener('click', function () {
+      if (connectedWallet) {
+        disconnectWallet();
+      } else {
+        connectWallet();
+      }
+    });
+
+    // Auto-reconnect if previously connected
+    var provider = getPhantomProvider();
+    if (provider && localStorage.getItem('brewbucks_wallet_connected') === 'true') {
+      provider.connect({ onlyIfTrusted: true })
+        .then(function (resp) {
+          setWalletConnected(resp.publicKey);
+        })
+        .catch(function () {
+          localStorage.removeItem('brewbucks_wallet_connected');
+        });
+    }
+
+    // Listen for wallet disconnect events
+    if (provider) {
+      provider.on('disconnect', function () {
+        setWalletDisconnected();
+      });
+      provider.on('accountChanged', function (publicKey) {
+        if (publicKey) {
+          setWalletConnected(publicKey);
+        } else {
+          setWalletDisconnected();
+        }
+      });
+    }
+  }
+
+  // ===========================
   // Navigation
   // ===========================
   const nav = document.getElementById('nav');
