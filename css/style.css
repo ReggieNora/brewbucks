@@ -456,7 +456,8 @@ ul {
   margin: 0 auto 20px;
 }
 
-.coffee-bag-visual svg {
+.coffee-bag-visual svg,
+.coffee-bag-visual img {
   width: 100%;
   height: auto;
   filter: drop-shadow(0 12px 32px rgba(0, 0, 0, 0.4));
@@ -632,14 +633,16 @@ ul {
   margin: 0 auto;
 }
 
-.showcase-item__image svg {
+.showcase-item__image svg,
+.showcase-item__image img {
   width: 100%;
   height: auto;
   filter: drop-shadow(0 16px 48px rgba(0, 0, 0, 0.5));
   transition: transform var(--transition-slow);
 }
 
-.showcase-item:hover .showcase-item__image svg {
+.showcase-item:hover .showcase-item__image svg,
+.showcase-item:hover .showcase-item__image img {
   transform: translateY(-6px);
 }
 
@@ -929,6 +932,16 @@ ul {
 .product-card__image {
   aspect-ratio: 1;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg-elevated), var(--bg-card));
+}
+
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .product-card__placeholder {
