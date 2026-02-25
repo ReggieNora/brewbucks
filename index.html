@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Analytics-ready: insert GA/GTM snippet here -->
 </head>
 <body>
   <!-- Navigation -->
@@ -43,154 +42,325 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero__bg-effects">
-      <div class="hero__glow hero__glow--1"></div>
-      <div class="hero__glow hero__glow--2"></div>
+  <section class="hero-home">
+    <div class="container hero-home__inner">
+      <p class="hero-home__strike"><s>Generic overpriced coffee subscriptions</s></p>
+      <h1 class="hero-home__title">Coffee that comes<br>with ownership.</h1>
+      <p class="hero-home__subtitle">BrewBucks blends premium single-origin coffee with Web3 membership. NFT Mug holders get lifetime discounts, exclusive drops, and a real seat at the table. No crypto knowledge required.</p>
+      <form class="hero-home__form" id="emailForm">
+        <input type="email" placeholder="you@email.com" required class="hero-home__input" id="emailInput">
+        <button type="submit" class="btn btn--primary">Join the Waitlist</button>
+      </form>
+      <p class="hero-home__note" id="emailNote">Join 2,500+ coffee lovers. No spam, ever.</p>
     </div>
-    <div class="container hero__inner">
-      <div class="hero__content">
-        <p class="hero__tag">Web3 Coffee Culture</p>
-        <h1 class="hero__title">Own the Mug.<br>Drink the Future.</h1>
-        <p class="hero__subtitle">BrewBucks NFT Mug Membership gives you lifetime discounts, early access to limited blends, and members-only drops. No crypto knowledge required.</p>
-        <div class="hero__actions">
-          <a href="pages/shop.html" class="btn btn--primary">Shop Coffee</a>
-          <a href="pages/nft-membership.html" class="btn btn--secondary">Get NFT Mug</a>
-        </div>
-      </div>
-      <div class="hero__visual">
-        <div class="hero__mug">
-          <div class="hero__mug-body">
-            <div class="hero__mug-steam">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="hero__mug-face">&#9749;</div>
-            <div class="hero__mug-label">BB #0001</div>
+  </section>
+
+  <!-- Featured Coffees -->
+  <section class="featured-coffees">
+    <div class="container">
+      <div class="featured-coffees__grid">
+        <!-- Bitcoin Season -->
+        <div class="coffee-bag-card">
+          <div class="coffee-bag-visual">
+            <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="30" y="55" width="140" height="215" rx="8" fill="#2A2015"/>
+              <path d="M30 55 L45 18 Q48 10 58 10 L142 10 Q152 10 155 18 L170 55Z" fill="#352A1E"/>
+              <rect x="30" y="50" width="140" height="10" rx="4" fill="#3D3025"/>
+              <line x1="50" y1="55" x2="150" y2="55" stroke="#4A3D30" stroke-width="0.5"/>
+              <rect x="42" y="82" width="116" height="160" rx="6" fill="#D4A574"/>
+              <text x="100" y="108" text-anchor="middle" font-size="7.5" font-weight="600" letter-spacing="2.5" fill="#1A1510" font-family="'Space Grotesk',sans-serif">BREWBUCKS</text>
+              <line x1="58" y1="117" x2="142" y2="117" stroke="#1A1510" stroke-opacity="0.12"/>
+              <text x="100" y="147" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1510" font-family="'Space Grotesk',sans-serif">BITCOIN</text>
+              <text x="100" y="169" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1510" font-family="'Space Grotesk',sans-serif">SEASON</text>
+              <line x1="72" y1="180" x2="128" y2="180" stroke="#1A1510" stroke-opacity="0.12"/>
+              <text x="100" y="198" text-anchor="middle" font-size="6.5" letter-spacing="1.5" fill="#1A1510" opacity="0.6" font-family="'Inter',sans-serif">DARK ROAST &middot; 12 OZ</text>
+              <text x="100" y="213" text-anchor="middle" font-size="6" letter-spacing="1" fill="#1A1510" opacity="0.45" font-family="'Inter',sans-serif">HUILA, COLOMBIA</text>
+              <circle cx="100" cy="230" r="3.5" fill="#F7931A"/>
+            </svg>
           </div>
+          <h3>Bitcoin Season</h3>
+          <p>Dark Roast &middot; $28</p>
+        </div>
+
+        <!-- Solana Smooth -->
+        <div class="coffee-bag-card">
+          <div class="coffee-bag-visual">
+            <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="30" y="55" width="140" height="215" rx="8" fill="#201828"/>
+              <path d="M30 55 L45 18 Q48 10 58 10 L142 10 Q152 10 155 18 L170 55Z" fill="#2A2035"/>
+              <rect x="30" y="50" width="140" height="10" rx="4" fill="#352A40"/>
+              <line x1="50" y1="55" x2="150" y2="55" stroke="#443860" stroke-width="0.5"/>
+              <rect x="42" y="82" width="116" height="160" rx="6" fill="#C4B5F0"/>
+              <text x="100" y="108" text-anchor="middle" font-size="7.5" font-weight="600" letter-spacing="2.5" fill="#1A1028" font-family="'Space Grotesk',sans-serif">BREWBUCKS</text>
+              <line x1="58" y1="117" x2="142" y2="117" stroke="#1A1028" stroke-opacity="0.12"/>
+              <text x="100" y="147" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1028" font-family="'Space Grotesk',sans-serif">SOLANA</text>
+              <text x="100" y="169" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1028" font-family="'Space Grotesk',sans-serif">SMOOTH</text>
+              <line x1="72" y1="180" x2="128" y2="180" stroke="#1A1028" stroke-opacity="0.12"/>
+              <text x="100" y="198" text-anchor="middle" font-size="6.5" letter-spacing="1.5" fill="#1A1028" opacity="0.6" font-family="'Inter',sans-serif">LIGHT ROAST &middot; 12 OZ</text>
+              <text x="100" y="213" text-anchor="middle" font-size="6" letter-spacing="1" fill="#1A1028" opacity="0.45" font-family="'Inter',sans-serif">GAKENKE, RWANDA</text>
+              <circle cx="100" cy="230" r="3.5" fill="#9945FF"/>
+            </svg>
+          </div>
+          <h3>Solana Smooth</h3>
+          <p>Light Roast &middot; $26</p>
+        </div>
+
+        <!-- Ether Espresso -->
+        <div class="coffee-bag-card">
+          <div class="coffee-bag-visual">
+            <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="30" y="55" width="140" height="215" rx="8" fill="#182028"/>
+              <path d="M30 55 L45 18 Q48 10 58 10 L142 10 Q152 10 155 18 L170 55Z" fill="#202A35"/>
+              <rect x="30" y="50" width="140" height="10" rx="4" fill="#2A3540"/>
+              <line x1="50" y1="55" x2="150" y2="55" stroke="#385060" stroke-width="0.5"/>
+              <rect x="42" y="82" width="116" height="160" rx="6" fill="#A3C5EA"/>
+              <text x="100" y="108" text-anchor="middle" font-size="7.5" font-weight="600" letter-spacing="2.5" fill="#10182A" font-family="'Space Grotesk',sans-serif">BREWBUCKS</text>
+              <line x1="58" y1="117" x2="142" y2="117" stroke="#10182A" stroke-opacity="0.12"/>
+              <text x="100" y="147" text-anchor="middle" font-size="18" font-weight="700" fill="#10182A" font-family="'Space Grotesk',sans-serif">ETHER</text>
+              <text x="100" y="169" text-anchor="middle" font-size="18" font-weight="700" fill="#10182A" font-family="'Space Grotesk',sans-serif">ESPRESSO</text>
+              <line x1="72" y1="180" x2="128" y2="180" stroke="#10182A" stroke-opacity="0.12"/>
+              <text x="100" y="198" text-anchor="middle" font-size="6.5" letter-spacing="1.5" fill="#10182A" opacity="0.6" font-family="'Inter',sans-serif">MEDIUM-DARK &middot; 12 OZ</text>
+              <text x="100" y="213" text-anchor="middle" font-size="6" letter-spacing="1" fill="#10182A" opacity="0.45" font-family="'Inter',sans-serif">BOQUETE, PANAMA</text>
+              <circle cx="100" cy="230" r="3.5" fill="#627EEA"/>
+            </svg>
+          </div>
+          <h3>Ether Espresso</h3>
+          <p>Medium-Dark &middot; $30</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How It Works -->
-  <section class="how-it-works" id="howItWorks">
+  <!-- Founder Story -->
+  <section class="founder-story">
     <div class="container">
-      <h2 class="section-title">How It Works</h2>
-      <p class="section-subtitle">Three simple steps to unlock your BrewBucks membership.</p>
-      <div class="steps">
-        <div class="step">
-          <div class="step__number">01</div>
-          <div class="step__icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="2" y="7" width="20" height="14" rx="2"/>
-              <path d="M16 7V5a4 4 0 00-8 0v2"/>
-            </svg>
-          </div>
-          <h3 class="step__title">Buy a Mug NFT</h3>
-          <p class="step__text">Pick your mug from our collection. Each one is unique and yours forever.</p>
+      <h2 class="section-title">Who's Behind BrewBucks?</h2>
+      <div class="founder-story__card">
+        <div class="founder-story__avatar">
+          <div class="founder-story__avatar-placeholder">BB</div>
         </div>
-        <div class="step__connector"></div>
-        <div class="step">
-          <div class="step__number">02</div>
-          <div class="step__icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
-          </div>
-          <h3 class="step__title">Unlock Perks</h3>
-          <p class="step__text">Get lifetime 10% off, early access to drops, and members-only blends.</p>
-        </div>
-        <div class="step__connector"></div>
-        <div class="step">
-          <div class="step__number">03</div>
-          <div class="step__icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M18 8h1a4 4 0 010 8h-1"/>
-              <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
-              <line x1="6" y1="1" x2="6" y2="4"/>
-              <line x1="10" y1="1" x2="10" y2="4"/>
-              <line x1="14" y1="1" x2="14" y2="4"/>
-            </svg>
-          </div>
-          <h3 class="step__title">Redeem Benefits</h3>
-          <p class="step__text">Use your perks at checkout, access the members portal, and enjoy exclusive coffee.</p>
+        <div class="founder-story__content">
+          <p>BrewBucks started with a simple question: <strong>what if your morning coffee came with real ownership?</strong></p>
+          <p>Not just a bag of beans, but a membership to something bigger. A community where your NFT Mug isn't just a collectible — it's your ticket to lifetime discounts, first dibs on limited drops, and a real voice in what we roast next.</p>
+          <p>We source single-origin coffees from farms we've visited personally, roast in small batches weekly, and ship fresh. The Web3 part? That's just how we give power back to the people who actually drink the coffee.</p>
+          <p class="founder-story__signature">— The BrewBucks Team</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Seasonal Drops -->
-  <section class="seasonal-drops">
+  <!-- Our Promise -->
+  <section class="our-promise">
     <div class="container">
-      <h2 class="section-title">Seasonal Drops</h2>
-      <p class="section-subtitle">Limited-edition blends inspired by the culture we love.</p>
-      <div class="drops-grid">
-        <div class="drop-card">
-          <div class="drop-card__badge">Limited</div>
-          <div class="drop-card__image">
-            <div class="drop-card__placeholder" style="--accent: #F7931A;">
-              <span>&#8383;</span>
-            </div>
+      <h2 class="section-title">Our Pinky Promise</h2>
+      <p class="section-subtitle">What you get when you join the BrewBucks community.</p>
+      <div class="promise-grid">
+        <div class="promise-card">
+          <div class="promise-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           </div>
-          <div class="drop-card__body">
-            <h3 class="drop-card__name">Bitcoin Season</h3>
-            <p class="drop-card__desc">Bold, dark roast with smoky undertones. For those who HODL their standards high.</p>
-            <div class="drop-card__meta">
-              <span class="drop-card__price">$28</span>
-              <span class="drop-card__tag">Dark Roast</span>
-            </div>
-            <a href="pages/shop.html" class="btn btn--small btn--primary">Shop Now</a>
-          </div>
+          <h3>Single-Origin Only</h3>
+          <p>Every blend is traceable to its farm. No fillers, no blends of mystery beans from who-knows-where.</p>
         </div>
-        <div class="drop-card">
-          <div class="drop-card__badge">New</div>
-          <div class="drop-card__image">
-            <div class="drop-card__placeholder" style="--accent: #9945FF;">
-              <span>&#9672;</span>
-            </div>
+        <div class="promise-card">
+          <div class="promise-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <div class="drop-card__body">
-            <h3 class="drop-card__name">Solana Smooth</h3>
-            <p class="drop-card__desc">Light and fast, with bright citrus notes and a smooth, clean finish.</p>
-            <div class="drop-card__meta">
-              <span class="drop-card__price">$26</span>
-              <span class="drop-card__tag">Light Roast</span>
-            </div>
-            <a href="pages/shop.html" class="btn btn--small btn--primary">Shop Now</a>
-          </div>
+          <h3>Small Batch Roasted</h3>
+          <p>Roasted weekly in small batches so your coffee is always at peak freshness. Never sitting on a shelf.</p>
         </div>
-        <div class="drop-card">
-          <div class="drop-card__badge">Coming Soon</div>
-          <div class="drop-card__image">
-            <div class="drop-card__placeholder" style="--accent: #627EEA;">
-              <span>&#9670;</span>
-            </div>
+        <div class="promise-card">
+          <div class="promise-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
           </div>
-          <div class="drop-card__body">
-            <h3 class="drop-card__name">Ether Espresso</h3>
-            <p class="drop-card__desc">Rich, layered complexity. A medium-dark blend that rewards patience.</p>
-            <div class="drop-card__meta">
-              <span class="drop-card__price">$30</span>
-              <span class="drop-card__tag">Medium-Dark</span>
-            </div>
-            <a href="pages/shop.html" class="btn btn--small btn--primary">Coming Soon</a>
+          <h3>True Ownership</h3>
+          <p>Your NFT Mug is yours forever. Real perks tied to real coffee — not just a JPEG collecting dust.</p>
+        </div>
+        <div class="promise-card">
+          <div class="promise-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
           </div>
+          <h3>Community First</h3>
+          <p>Members vote on new blends, get early access to limited drops, and actually shape what we make.</p>
+        </div>
+        <div class="promise-card">
+          <div class="promise-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>Ethically Sourced</h3>
+          <p>Direct trade relationships with every farm. Fair prices for farmers, exceptional coffee for you.</p>
+        </div>
+        <div class="promise-card">
+          <div class="promise-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h3>No Crypto Hassle</h3>
+          <p>Buy with a card, get your NFT perks automatically. No wallet setup, no gas fees, no headaches.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Email Capture -->
-  <section class="email-capture">
+  <!-- Coffee Showcase -->
+  <section class="coffee-showcase">
     <div class="container">
-      <div class="email-capture__inner">
-        <h2 class="email-capture__title">Get Early Access</h2>
-        <p class="email-capture__text">Be first to know about new drops, membership perks, and exclusive offers.</p>
-        <form class="email-capture__form" id="emailForm">
-          <input type="email" placeholder="you@email.com" required class="email-capture__input" id="emailInput">
-          <button type="submit" class="btn btn--primary">Join the List</button>
-        </form>
-        <p class="email-capture__note" id="emailNote">No spam. Unsubscribe anytime.</p>
+      <h2 class="section-title">BrewBucks Coffees</h2>
+      <p class="section-subtitle">Seasonal drops inspired by the culture we love.</p>
+
+      <!-- Bitcoin Season -->
+      <div class="showcase-item">
+        <div class="showcase-item__image">
+          <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="55" width="140" height="215" rx="8" fill="#2A2015"/>
+            <path d="M30 55 L45 18 Q48 10 58 10 L142 10 Q152 10 155 18 L170 55Z" fill="#352A1E"/>
+            <rect x="30" y="50" width="140" height="10" rx="4" fill="#3D3025"/>
+            <line x1="50" y1="55" x2="150" y2="55" stroke="#4A3D30" stroke-width="0.5"/>
+            <rect x="42" y="82" width="116" height="160" rx="6" fill="#D4A574"/>
+            <text x="100" y="108" text-anchor="middle" font-size="7.5" font-weight="600" letter-spacing="2.5" fill="#1A1510" font-family="'Space Grotesk',sans-serif">BREWBUCKS</text>
+            <line x1="58" y1="117" x2="142" y2="117" stroke="#1A1510" stroke-opacity="0.12"/>
+            <text x="100" y="147" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1510" font-family="'Space Grotesk',sans-serif">BITCOIN</text>
+            <text x="100" y="169" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1510" font-family="'Space Grotesk',sans-serif">SEASON</text>
+            <line x1="72" y1="180" x2="128" y2="180" stroke="#1A1510" stroke-opacity="0.12"/>
+            <text x="100" y="198" text-anchor="middle" font-size="6.5" letter-spacing="1.5" fill="#1A1510" opacity="0.6" font-family="'Inter',sans-serif">DARK ROAST &middot; 12 OZ</text>
+            <text x="100" y="213" text-anchor="middle" font-size="6" letter-spacing="1" fill="#1A1510" opacity="0.45" font-family="'Inter',sans-serif">HUILA, COLOMBIA</text>
+            <circle cx="100" cy="230" r="3.5" fill="#F7931A"/>
+          </svg>
+        </div>
+        <div class="showcase-item__details">
+          <h3 class="showcase-item__name">Bitcoin Season</h3>
+          <p class="showcase-item__desc">Bold, dark roast with smoky undertones and a rich, full body. For those who HODL their standards high and never settle for less.</p>
+          <p class="showcase-item__price">$28</p>
+          <div class="showcase-item__meta">
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Tasting Notes</span>
+              <span class="showcase-item__meta-value">Dark Chocolate, Smoke, Brown Sugar</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Producer</span>
+              <span class="showcase-item__meta-value">Finca El Diamante</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Process</span>
+              <span class="showcase-item__meta-value">Washed</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Elevation</span>
+              <span class="showcase-item__meta-value">1,800 MASL</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Region</span>
+              <span class="showcase-item__meta-value">Huila, Colombia</span>
+            </div>
+          </div>
+          <a href="pages/shop.html" class="btn btn--primary">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Solana Smooth (reversed) -->
+      <div class="showcase-item showcase-item--reversed">
+        <div class="showcase-item__image">
+          <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="55" width="140" height="215" rx="8" fill="#201828"/>
+            <path d="M30 55 L45 18 Q48 10 58 10 L142 10 Q152 10 155 18 L170 55Z" fill="#2A2035"/>
+            <rect x="30" y="50" width="140" height="10" rx="4" fill="#352A40"/>
+            <line x1="50" y1="55" x2="150" y2="55" stroke="#443860" stroke-width="0.5"/>
+            <rect x="42" y="82" width="116" height="160" rx="6" fill="#C4B5F0"/>
+            <text x="100" y="108" text-anchor="middle" font-size="7.5" font-weight="600" letter-spacing="2.5" fill="#1A1028" font-family="'Space Grotesk',sans-serif">BREWBUCKS</text>
+            <line x1="58" y1="117" x2="142" y2="117" stroke="#1A1028" stroke-opacity="0.12"/>
+            <text x="100" y="147" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1028" font-family="'Space Grotesk',sans-serif">SOLANA</text>
+            <text x="100" y="169" text-anchor="middle" font-size="18" font-weight="700" fill="#1A1028" font-family="'Space Grotesk',sans-serif">SMOOTH</text>
+            <line x1="72" y1="180" x2="128" y2="180" stroke="#1A1028" stroke-opacity="0.12"/>
+            <text x="100" y="198" text-anchor="middle" font-size="6.5" letter-spacing="1.5" fill="#1A1028" opacity="0.6" font-family="'Inter',sans-serif">LIGHT ROAST &middot; 12 OZ</text>
+            <text x="100" y="213" text-anchor="middle" font-size="6" letter-spacing="1" fill="#1A1028" opacity="0.45" font-family="'Inter',sans-serif">GAKENKE, RWANDA</text>
+            <circle cx="100" cy="230" r="3.5" fill="#9945FF"/>
+          </svg>
+        </div>
+        <div class="showcase-item__details">
+          <h3 class="showcase-item__name">Solana Smooth</h3>
+          <p class="showcase-item__desc">Light and fast, with bright citrus notes and a smooth, clean finish. The kind of coffee that makes mornings feel effortless.</p>
+          <p class="showcase-item__price">$26</p>
+          <div class="showcase-item__meta">
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Tasting Notes</span>
+              <span class="showcase-item__meta-value">Citrus, Honey, Jasmine</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Producer</span>
+              <span class="showcase-item__meta-value">Cooperative Dukunde Kawa</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Process</span>
+              <span class="showcase-item__meta-value">Natural</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Elevation</span>
+              <span class="showcase-item__meta-value">1,650 MASL</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Region</span>
+              <span class="showcase-item__meta-value">Gakenke, Rwanda</span>
+            </div>
+          </div>
+          <a href="pages/shop.html" class="btn btn--primary">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Ether Espresso -->
+      <div class="showcase-item">
+        <div class="showcase-item__image">
+          <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="55" width="140" height="215" rx="8" fill="#182028"/>
+            <path d="M30 55 L45 18 Q48 10 58 10 L142 10 Q152 10 155 18 L170 55Z" fill="#202A35"/>
+            <rect x="30" y="50" width="140" height="10" rx="4" fill="#2A3540"/>
+            <line x1="50" y1="55" x2="150" y2="55" stroke="#385060" stroke-width="0.5"/>
+            <rect x="42" y="82" width="116" height="160" rx="6" fill="#A3C5EA"/>
+            <text x="100" y="108" text-anchor="middle" font-size="7.5" font-weight="600" letter-spacing="2.5" fill="#10182A" font-family="'Space Grotesk',sans-serif">BREWBUCKS</text>
+            <line x1="58" y1="117" x2="142" y2="117" stroke="#10182A" stroke-opacity="0.12"/>
+            <text x="100" y="147" text-anchor="middle" font-size="18" font-weight="700" fill="#10182A" font-family="'Space Grotesk',sans-serif">ETHER</text>
+            <text x="100" y="169" text-anchor="middle" font-size="18" font-weight="700" fill="#10182A" font-family="'Space Grotesk',sans-serif">ESPRESSO</text>
+            <line x1="72" y1="180" x2="128" y2="180" stroke="#10182A" stroke-opacity="0.12"/>
+            <text x="100" y="198" text-anchor="middle" font-size="6.5" letter-spacing="1.5" fill="#10182A" opacity="0.6" font-family="'Inter',sans-serif">MEDIUM-DARK &middot; 12 OZ</text>
+            <text x="100" y="213" text-anchor="middle" font-size="6" letter-spacing="1" fill="#10182A" opacity="0.45" font-family="'Inter',sans-serif">BOQUETE, PANAMA</text>
+            <circle cx="100" cy="230" r="3.5" fill="#627EEA"/>
+          </svg>
+        </div>
+        <div class="showcase-item__details">
+          <h3 class="showcase-item__name">Ether Espresso</h3>
+          <p class="showcase-item__desc">Rich, layered complexity with a medium-dark profile that rewards patience. Notes unfold with every sip like a well-built smart contract.</p>
+          <p class="showcase-item__price">$30</p>
+          <div class="showcase-item__meta">
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Tasting Notes</span>
+              <span class="showcase-item__meta-value">Caramel, Walnut, Dried Fruit</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Producer</span>
+              <span class="showcase-item__meta-value">Hacienda La Esmeralda</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Process</span>
+              <span class="showcase-item__meta-value">Honey</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Elevation</span>
+              <span class="showcase-item__meta-value">1,900 MASL</span>
+            </div>
+            <div class="showcase-item__meta-row">
+              <span class="showcase-item__meta-label">Region</span>
+              <span class="showcase-item__meta-value">Boquete, Panama</span>
+            </div>
+          </div>
+          <a href="pages/shop.html" class="btn btn--primary">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sourcing Note -->
+  <section class="sourcing-note">
+    <div class="container">
+      <div class="sourcing-note__inner">
+        <p>All BrewBucks coffees are sourced through direct trade relationships. We visit our partner farms annually and pay above fair-trade prices — because quality deserves real compensation, not lip service.</p>
       </div>
     </div>
   </section>

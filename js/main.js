@@ -300,13 +300,20 @@
         input.value = '';
         input.disabled = true;
         note.textContent = 'You\'re on the list! We\'ll be in touch.';
-        note.className = 'email-capture__note email-capture__note--success';
+        // Support both hero-home and email-capture note classes
+        note.className = note.className.indexOf('hero-home') !== -1
+          ? 'hero-home__note hero-home__note--success'
+          : 'email-capture__note email-capture__note--success';
 
         // Re-enable after a delay
         setTimeout(function () {
           input.disabled = false;
-          note.textContent = 'No spam. Unsubscribe anytime.';
-          note.className = 'email-capture__note';
+          note.textContent = note.className.indexOf('hero-home') !== -1
+            ? 'Join 2,500+ coffee lovers. No spam, ever.'
+            : 'No spam. Unsubscribe anytime.';
+          note.className = note.className.indexOf('hero-home') !== -1
+            ? 'hero-home__note'
+            : 'email-capture__note';
         }, 5000);
       }
     });
@@ -317,7 +324,7 @@
   // ===========================
   function initScrollAnimations() {
     var elements = document.querySelectorAll(
-      '.step, .drop-card, .product-card, .benefit-card, .value-card, .team-card, .nft-step, .stat-box, .faq-category'
+      '.coffee-bag-card, .promise-card, .showcase-item, .product-card, .benefit-card, .value-card, .team-card, .nft-step, .stat-box, .faq-category'
     );
 
     elements.forEach(function (el) {
