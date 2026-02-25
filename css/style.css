@@ -1289,6 +1289,14 @@ ul {
   opacity: 0.9;
 }
 
+.hero__mug-img {
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+}
+
 .hero__mug-label {
   font-family: var(--font-display);
   font-size: 0.75rem;
@@ -1322,8 +1330,9 @@ ul {
   height: 170px;
 }
 
-.nft-mug-display__item .hero__mug-face {
-  font-size: 2.5rem;
+.nft-mug-display__item .hero__mug-img {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .nft-mug-display__item .hero__mug-label {
