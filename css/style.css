@@ -338,11 +338,23 @@ ul {
   justify-content: center;
   padding: 140px 0 80px;
   text-align: center;
+  position: relative;
+  background: url('../images/hero-bg.jpg') center/cover no-repeat var(--bg-primary);
+}
+
+.hero-home::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 13, 13, 0.82);
+  z-index: 0;
 }
 
 .hero-home__inner {
   max-width: 720px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-home__strike {
