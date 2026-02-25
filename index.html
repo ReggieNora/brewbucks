@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrewBucks — Own the Mug. Drink the Future.</title>
+  <meta name="description" content="BrewBucks blends specialty coffee culture with Web3 membership. Premium seasonal blends and exclusive NFT Mug Memberships.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Analytics-ready: insert GA/GTM snippet here -->
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">&#9749;</span>
+        <span class="nav__logo-text">BrewBucks</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="nav__link active">Home</a></li>
+        <li><a href="pages/shop.html" class="nav__link">Shop</a></li>
+        <li><a href="pages/nft-membership.html" class="nav__link">NFT Membership</a></li>
+        <li><a href="pages/about.html" class="nav__link">About</a></li>
+        <li><a href="pages/faq.html" class="nav__link">FAQ</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__cart" id="cartBtn" aria-label="Shopping cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="nav__cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__bg-effects">
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__tag">Web3 Coffee Culture</p>
+        <h1 class="hero__title">Own the Mug.<br>Drink the Future.</h1>
+        <p class="hero__subtitle">BrewBucks NFT Mug Membership gives you lifetime discounts, early access to limited blends, and members-only drops. No crypto knowledge required.</p>
+        <div class="hero__actions">
+          <a href="pages/shop.html" class="btn btn--primary">Shop Coffee</a>
+          <a href="pages/nft-membership.html" class="btn btn--secondary">Get NFT Mug</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__mug">
+          <div class="hero__mug-body">
+            <div class="hero__mug-steam">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="hero__mug-face">&#9749;</div>
+            <div class="hero__mug-label">BB #0001</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="howItWorks">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">Three simple steps to unlock your BrewBucks membership.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">01</div>
+          <div class="step__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M16 7V5a4 4 0 00-8 0v2"/>
+            </svg>
+          </div>
+          <h3 class="step__title">Buy a Mug NFT</h3>
+          <p class="step__text">Pick your mug from our collection. Each one is unique and yours forever.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">02</div>
+          <div class="step__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3 class="step__title">Unlock Perks</h3>
+          <p class="step__text">Get lifetime 10% off, early access to drops, and members-only blends.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">03</div>
+          <div class="step__icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 8h1a4 4 0 010 8h-1"/>
+              <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+              <line x1="6" y1="1" x2="6" y2="4"/>
+              <line x1="10" y1="1" x2="10" y2="4"/>
+              <line x1="14" y1="1" x2="14" y2="4"/>
+            </svg>
+          </div>
+          <h3 class="step__title">Redeem Benefits</h3>
+          <p class="step__text">Use your perks at checkout, access the members portal, and enjoy exclusive coffee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seasonal Drops -->
+  <section class="seasonal-drops">
+    <div class="container">
+      <h2 class="section-title">Seasonal Drops</h2>
+      <p class="section-subtitle">Limited-edition blends inspired by the culture we love.</p>
+      <div class="drops-grid">
+        <div class="drop-card">
+          <div class="drop-card__badge">Limited</div>
+          <div class="drop-card__image">
+            <div class="drop-card__placeholder" style="--accent: #F7931A;">
+              <span>&#8383;</span>
+            </div>
+          </div>
+          <div class="drop-card__body">
+            <h3 class="drop-card__name">Bitcoin Season</h3>
+            <p class="drop-card__desc">Bold, dark roast with smoky undertones. For those who HODL their standards high.</p>
+            <div class="drop-card__meta">
+              <span class="drop-card__price">$28</span>
+              <span class="drop-card__tag">Dark Roast</span>
+            </div>
+            <a href="pages/shop.html" class="btn btn--small btn--primary">Shop Now</a>
+          </div>
+        </div>
+        <div class="drop-card">
+          <div class="drop-card__badge">New</div>
+          <div class="drop-card__image">
+            <div class="drop-card__placeholder" style="--accent: #9945FF;">
+              <span>&#9672;</span>
+            </div>
+          </div>
+          <div class="drop-card__body">
+            <h3 class="drop-card__name">Solana Smooth</h3>
+            <p class="drop-card__desc">Light and fast, with bright citrus notes and a smooth, clean finish.</p>
+            <div class="drop-card__meta">
+              <span class="drop-card__price">$26</span>
+              <span class="drop-card__tag">Light Roast</span>
+            </div>
+            <a href="pages/shop.html" class="btn btn--small btn--primary">Shop Now</a>
+          </div>
+        </div>
+        <div class="drop-card">
+          <div class="drop-card__badge">Coming Soon</div>
+          <div class="drop-card__image">
+            <div class="drop-card__placeholder" style="--accent: #627EEA;">
+              <span>&#9670;</span>
+            </div>
+          </div>
+          <div class="drop-card__body">
+            <h3 class="drop-card__name">Ether Espresso</h3>
+            <p class="drop-card__desc">Rich, layered complexity. A medium-dark blend that rewards patience.</p>
+            <div class="drop-card__meta">
+              <span class="drop-card__price">$30</span>
+              <span class="drop-card__tag">Medium-Dark</span>
+            </div>
+            <a href="pages/shop.html" class="btn btn--small btn--primary">Coming Soon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Capture -->
+  <section class="email-capture">
+    <div class="container">
+      <div class="email-capture__inner">
+        <h2 class="email-capture__title">Get Early Access</h2>
+        <p class="email-capture__text">Be first to know about new drops, membership perks, and exclusive offers.</p>
+        <form class="email-capture__form" id="emailForm">
+          <input type="email" placeholder="you@email.com" required class="email-capture__input" id="emailInput">
+          <button type="submit" class="btn btn--primary">Join the List</button>
+        </form>
+        <p class="email-capture__note" id="emailNote">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-icon">&#9749;</span>
+          <span class="nav__logo-text">BrewBucks</span>
+        </a>
+        <p class="footer__tagline">Premium coffee meets Web3 culture.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <a href="pages/shop.html">All Coffee</a>
+          <a href="pages/shop.html#subscriptions">Subscriptions</a>
+          <a href="pages/nft-membership.html">NFT Membership</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="pages/about.html">About</a>
+          <a href="pages/faq.html">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Community</h4>
+          <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="#" target="_blank" rel="noopener">Discord</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 BrewBucks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

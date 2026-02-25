@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFT Mug Membership — BrewBucks</title>
+  <meta name="description" content="Join the BrewBucks NFT Mug Membership. Lifetime discounts, early access to limited blends, and members-only perks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-icon">&#9749;</span>
+        <span class="nav__logo-text">BrewBucks</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="../index.html" class="nav__link">Home</a></li>
+        <li><a href="shop.html" class="nav__link">Shop</a></li>
+        <li><a href="nft-membership.html" class="nav__link active">NFT Membership</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="faq.html" class="nav__link">FAQ</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__cart" id="cartBtn" aria-label="Shopping cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="nav__cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NFT Hero -->
+  <section class="nft-hero">
+    <div class="hero__bg-effects">
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+    </div>
+    <div class="container nft-hero__inner">
+      <div class="nft-hero__content">
+        <p class="hero__tag">Membership</p>
+        <h1 class="nft-hero__title">NFT Mug Membership</h1>
+        <p class="nft-hero__subtitle">Think of it as a digital membership card, shaped like a coffee mug. Own one, and you unlock real perks every time you shop with us.</p>
+        <a href="#mint" class="btn btn--primary btn--large">Mint Your Mug</a>
+      </div>
+      <div class="nft-hero__mugs">
+        <div class="nft-mug-display">
+          <div class="nft-mug-display__item nft-mug-display__item--1">
+            <div class="hero__mug-body">
+              <div class="hero__mug-face">&#9749;</div>
+              <div class="hero__mug-label">BB #0042</div>
+            </div>
+          </div>
+          <div class="nft-mug-display__item nft-mug-display__item--2">
+            <div class="hero__mug-body hero__mug-body--alt">
+              <div class="hero__mug-face">&#9749;</div>
+              <div class="hero__mug-label">BB #0187</div>
+            </div>
+          </div>
+          <div class="nft-mug-display__item nft-mug-display__item--3">
+            <div class="hero__mug-body hero__mug-body--alt2">
+              <div class="hero__mug-face">&#9749;</div>
+              <div class="hero__mug-label">BB #0999</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You Get -->
+  <section class="nft-benefits">
+    <div class="container">
+      <h2 class="section-title">What You Get</h2>
+      <p class="section-subtitle">Real benefits, not speculation. Your mug works like a loyalty card that never expires.</p>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M16 8l-8 8M8 8h8v8"/>
+            </svg>
+          </div>
+          <h3>10% Off Forever</h3>
+          <p>Every order, every time. Your discount is tied to your membership and never expires.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3>Early Access</h3>
+          <p>Shop new blends 48 hours before everyone else. Limited drops go to members first.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3>Members-Only Drops</h3>
+          <p>Exclusive roasts created only for mug holders. These blends never hit the public shop.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <h3>Community Access</h3>
+          <p>Join the members-only Discord, vote on future blends, and connect with fellow enthusiasts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works (NFT specific) -->
+  <section class="nft-how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">No crypto expertise needed. We made it simple.</p>
+      <div class="nft-steps">
+        <div class="nft-step">
+          <div class="nft-step__number">1</div>
+          <h3>Click "Mint Your Mug"</h3>
+          <p>You'll be directed to our mint page where you can choose your mug. You can pay with a credit card or crypto wallet.</p>
+        </div>
+        <div class="nft-step">
+          <div class="nft-step__number">2</div>
+          <h3>Your Mug Appears in Your Wallet</h3>
+          <p>Don't have a wallet? No problem. We'll help you set one up in under two minutes. Think of it as a digital keychain for your membership.</p>
+        </div>
+        <div class="nft-step">
+          <div class="nft-step__number">3</div>
+          <h3>Connect &amp; Shop</h3>
+          <p>Connect your wallet when you shop. Your discounts and perks apply automatically at checkout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mint CTA -->
+  <section class="mint-cta" id="mint">
+    <div class="container">
+      <div class="mint-cta__inner">
+        <div class="mint-cta__content">
+          <h2>Ready to Join?</h2>
+          <p>2,500 mugs available. Each one is unique. Once they're gone, the only way in is the secondary market.</p>
+          <div class="mint-cta__price">
+            <span class="mint-cta__price-label">Mint Price</span>
+            <span class="mint-cta__price-value">0.05 SOL</span>
+          </div>
+          <!-- Placeholder: Replace href with Magic Eden mint link -->
+          <a href="#" class="btn btn--primary btn--large" id="mintBtn" target="_blank" rel="noopener">Mint on Magic Eden</a>
+          <p class="mint-cta__note">Minting on Solana via Magic Eden. Credit card payments accepted.</p>
+        </div>
+        <div class="mint-cta__stats">
+          <div class="stat-box">
+            <span class="stat-box__value">2,500</span>
+            <span class="stat-box__label">Total Supply</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-box__value">10%</span>
+            <span class="stat-box__label">Lifetime Discount</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-box__value">48hr</span>
+            <span class="stat-box__label">Early Access</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wallet FAQ -->
+  <section class="wallet-faq">
+    <div class="container">
+      <h2 class="section-title">Wallet FAQ</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-item__question">
+            What is a wallet?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>A digital wallet is like a secure account that holds your membership NFT. Think of it as a digital keychain. We recommend Phantom wallet, which takes about two minutes to set up.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Do I need crypto to mint?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>No. You can pay with a credit card directly through Magic Eden. If you prefer using crypto, you'll need a small amount of SOL (Solana's currency).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            What if I lose my wallet?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>When you create a wallet, you'll get a recovery phrase (a set of words). Store it safely. With that phrase, you can always recover your wallet and your mug.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Can I sell my mug later?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Yes. Your mug is yours. You can sell it on any Solana NFT marketplace. The new owner will receive all the membership benefits.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo">
+          <span class="nav__logo-icon">&#9749;</span>
+          <span class="nav__logo-text">BrewBucks</span>
+        </a>
+        <p class="footer__tagline">Premium coffee meets Web3 culture.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <a href="shop.html">All Coffee</a>
+          <a href="shop.html#subscriptions">Subscriptions</a>
+          <a href="nft-membership.html">NFT Membership</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Community</h4>
+          <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="#" target="_blank" rel="noopener">Discord</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 BrewBucks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

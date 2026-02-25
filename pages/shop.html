@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Coffee — BrewBucks</title>
+  <meta name="description" content="Shop premium seasonal coffee blends from BrewBucks. Bold flavors, unique origins, and exclusive membership perks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-icon">&#9749;</span>
+        <span class="nav__logo-text">BrewBucks</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="../index.html" class="nav__link">Home</a></li>
+        <li><a href="shop.html" class="nav__link active">Shop</a></li>
+        <li><a href="nft-membership.html" class="nav__link">NFT Membership</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="faq.html" class="nav__link">FAQ</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__cart" id="cartBtn" aria-label="Shopping cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="nav__cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Shop Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Shop Coffee</h1>
+      <p class="page-header__subtitle">Specialty blends roasted fresh. Every bag tells a story.</p>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <section class="shop-filters">
+    <div class="container">
+      <div class="shop-filters__inner">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="light">Light Roast</button>
+        <button class="filter-btn" data-filter="medium">Medium Roast</button>
+        <button class="filter-btn" data-filter="dark">Dark Roast</button>
+        <button class="filter-btn" data-filter="limited">Limited Edition</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="product-grid-section">
+    <div class="container">
+      <div class="product-grid">
+
+        <!-- Product 1: Bitcoin Season -->
+        <div class="product-card" data-category="dark limited" data-product-id="bitcoin-season">
+          <div class="product-card__badge">Limited</div>
+          <div class="product-card__image">
+            <div class="product-card__placeholder" style="--accent: #F7931A;">
+              <span>&#8383;</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Bitcoin Season</h3>
+            <p class="product-card__origin">Origin: Colombia &amp; Sumatra</p>
+            <div class="product-card__details">
+              <span class="product-card__roast">Dark Roast</span>
+              <span class="product-card__weight">12 oz</span>
+            </div>
+            <p class="product-card__notes">Tasting notes: Dark chocolate, smoky cedar, brown sugar</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$28</span>
+              <button class="btn btn--small btn--primary add-to-cart" data-name="Bitcoin Season" data-price="28">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Solana Smooth -->
+        <div class="product-card" data-category="light limited" data-product-id="solana-smooth">
+          <div class="product-card__badge">New</div>
+          <div class="product-card__image">
+            <div class="product-card__placeholder" style="--accent: #9945FF;">
+              <span>&#9672;</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Solana Smooth</h3>
+            <p class="product-card__origin">Origin: Ethiopia Yirgacheffe</p>
+            <div class="product-card__details">
+              <span class="product-card__roast">Light Roast</span>
+              <span class="product-card__weight">12 oz</span>
+            </div>
+            <p class="product-card__notes">Tasting notes: Bright citrus, jasmine, honey sweetness</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$26</span>
+              <button class="btn btn--small btn--primary add-to-cart" data-name="Solana Smooth" data-price="26">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Ether Espresso -->
+        <div class="product-card" data-category="medium limited" data-product-id="ether-espresso">
+          <div class="product-card__badge">Coming Soon</div>
+          <div class="product-card__image">
+            <div class="product-card__placeholder" style="--accent: #627EEA;">
+              <span>&#9670;</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Ether Espresso</h3>
+            <p class="product-card__origin">Origin: Guatemala &amp; Brazil</p>
+            <div class="product-card__details">
+              <span class="product-card__roast">Medium-Dark Roast</span>
+              <span class="product-card__weight">12 oz</span>
+            </div>
+            <p class="product-card__notes">Tasting notes: Caramel, walnut, dark berry, cocoa</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$30</span>
+              <button class="btn btn--small btn--primary add-to-cart" data-name="Ether Espresso" data-price="30">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Genesis Blend -->
+        <div class="product-card" data-category="medium" data-product-id="genesis-blend">
+          <div class="product-card__image">
+            <div class="product-card__placeholder" style="--accent: #D4A574;">
+              <span>&#9733;</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Genesis Blend</h3>
+            <p class="product-card__origin">Origin: Costa Rica &amp; Kenya</p>
+            <div class="product-card__details">
+              <span class="product-card__roast">Medium Roast</span>
+              <span class="product-card__weight">12 oz</span>
+            </div>
+            <p class="product-card__notes">Tasting notes: Milk chocolate, stone fruit, toasted almond</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$25</span>
+              <button class="btn btn--small btn--primary add-to-cart" data-name="Genesis Blend" data-price="25">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Staking Grounds -->
+        <div class="product-card" data-category="dark" data-product-id="staking-grounds">
+          <div class="product-card__image">
+            <div class="product-card__placeholder" style="--accent: #C69749;">
+              <span>&#9878;</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Staking Grounds</h3>
+            <p class="product-card__origin">Origin: Indonesia &amp; Peru</p>
+            <div class="product-card__details">
+              <span class="product-card__roast">Dark Roast</span>
+              <span class="product-card__weight">12 oz</span>
+            </div>
+            <p class="product-card__notes">Tasting notes: Earthy, dark cocoa, black cherry, spice</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$27</span>
+              <button class="btn btn--small btn--primary add-to-cart" data-name="Staking Grounds" data-price="27">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Proof of Roast -->
+        <div class="product-card" data-category="light" data-product-id="proof-of-roast">
+          <div class="product-card__image">
+            <div class="product-card__placeholder" style="--accent: #E8B86D;">
+              <span>&#9728;</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Proof of Roast</h3>
+            <p class="product-card__origin">Origin: Rwanda &amp; Colombia</p>
+            <div class="product-card__details">
+              <span class="product-card__roast">Light Roast</span>
+              <span class="product-card__weight">12 oz</span>
+            </div>
+            <p class="product-card__notes">Tasting notes: Blueberry, lavender, lemon zest, silky</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$26</span>
+              <button class="btn btn--small btn--primary add-to-cart" data-name="Proof of Roast" data-price="26">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription CTA -->
+  <section class="subscription-cta" id="subscriptions">
+    <div class="container">
+      <div class="subscription-cta__inner">
+        <div class="subscription-cta__content">
+          <h2>Subscribe &amp; Save</h2>
+          <p>Get your favorite blend delivered every 2 or 4 weeks. Subscribers save 15% on every order, and NFT members stack an extra 10% on top.</p>
+          <ul class="subscription-cta__perks">
+            <li>Free shipping on all subscription orders</li>
+            <li>Skip, pause, or cancel anytime</li>
+            <li>Early access to new blends</li>
+            <li>Exclusive subscriber-only roasts</li>
+          </ul>
+          <a href="#" class="btn btn--primary">Start a Subscription</a>
+        </div>
+        <div class="subscription-cta__visual">
+          <div class="subscription-visual-box">
+            <div class="subscription-visual-box__icon">&#9749;</div>
+            <p>Every 2 weeks</p>
+            <span class="subscription-visual-box__price">from $21/bag</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo">
+          <span class="nav__logo-icon">&#9749;</span>
+          <span class="nav__logo-text">BrewBucks</span>
+        </a>
+        <p class="footer__tagline">Premium coffee meets Web3 culture.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <a href="shop.html">All Coffee</a>
+          <a href="shop.html#subscriptions">Subscriptions</a>
+          <a href="nft-membership.html">NFT Membership</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Community</h4>
+          <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="#" target="_blank" rel="noopener">Discord</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 BrewBucks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

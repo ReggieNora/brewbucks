@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — BrewBucks</title>
+  <meta name="description" content="Frequently asked questions about BrewBucks coffee, NFT Mug Membership, wallets, and how to redeem perks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-icon">&#9749;</span>
+        <span class="nav__logo-text">BrewBucks</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="../index.html" class="nav__link">Home</a></li>
+        <li><a href="shop.html" class="nav__link">Shop</a></li>
+        <li><a href="nft-membership.html" class="nav__link">NFT Membership</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="faq.html" class="nav__link active">FAQ</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__cart" id="cartBtn" aria-label="Shopping cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="nav__cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FAQ Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Frequently Asked Questions</h1>
+      <p class="page-header__subtitle">Everything you need to know about BrewBucks, our coffee, and our NFT membership.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Content -->
+  <section class="faq-section">
+    <div class="container">
+
+      <!-- General -->
+      <div class="faq-category">
+        <h2 class="faq-category__title">General</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-item__question">
+              What is BrewBucks?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>BrewBucks is a premium coffee brand that combines specialty coffee with a digital membership program. We sell high-quality seasonal blends and offer an NFT Mug Membership that gives you permanent perks like discounts, early access, and exclusive products.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              Where is your coffee sourced from?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>We source beans from independent farms in Colombia, Ethiopia, Guatemala, Kenya, Rwanda, Indonesia, and Brazil. Our head roaster visits farms personally to ensure quality and ethical practices.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              Do you ship internationally?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Currently we ship within the United States. International shipping is coming soon. Join our email list to be the first to know when we expand.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NFT & Web3 -->
+      <div class="faq-category">
+        <h2 class="faq-category__title">NFT &amp; Web3</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-item__question">
+              What is an NFT?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>An NFT (non-fungible token) is a digital item stored on a blockchain. In our case, it's a digital coffee mug that acts as your membership card. It proves you're a member and unlocks your perks automatically. Think of it like a digital loyalty card that you truly own.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              Do I need crypto to buy a mug?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>No. You can mint your mug using a regular credit card through Magic Eden. If you prefer using crypto, you'll need a small amount of SOL (Solana's currency), but it's entirely optional.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              What blockchain are the mugs on?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Our NFT Mugs are on the Solana blockchain. Solana is fast, affordable, and widely supported by wallets and marketplaces.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              What wallet do I need?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>We recommend Phantom wallet. It's free, takes about two minutes to set up, and works with Solana. You can use it as a browser extension or mobile app.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Membership & Perks -->
+      <div class="faq-category">
+        <h2 class="faq-category__title">Membership &amp; Perks</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-item__question">
+              How do I redeem my perks?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Connect your wallet when you shop on our site. Your 10% discount will apply automatically at checkout. For early access and members-only drops, you'll see them in the shop when you're connected. It's seamless.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              Can I use the discount on subscriptions?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Yes. Your 10% membership discount stacks with the 15% subscription discount, giving you 25% off every recurring order.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              What happens if I sell my mug?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>When you sell your mug, the new owner gets all the membership benefits. Your perks are tied to the mug, not your account. You'll lose access to member benefits once the mug leaves your wallet.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              Is there a limit to how many mugs I can own?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>No limit. However, perks don't stack. Whether you own one mug or ten, you'll get the same 10% discount and access to member drops.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orders & Shipping -->
+      <div class="faq-category">
+        <h2 class="faq-category__title">Orders &amp; Shipping</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-item__question">
+              How long does shipping take?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Standard shipping takes 3-5 business days within the continental US. Subscription orders ship free. We roast to order, so your coffee is always fresh.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question">
+              Can I return or exchange coffee?
+              <span class="faq-item__icon">+</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Since coffee is perishable, we can't accept returns on opened bags. If there's an issue with your order, reach out to us and we'll make it right.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="faq-contact">
+    <div class="container">
+      <div class="faq-contact__inner">
+        <h2>Still Have Questions?</h2>
+        <p>We're here to help. Reach out on any of our channels.</p>
+        <div class="faq-contact__actions">
+          <a href="#" class="btn btn--primary">Email Us</a>
+          <a href="#" class="btn btn--secondary" target="_blank" rel="noopener">Join Discord</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo">
+          <span class="nav__logo-icon">&#9749;</span>
+          <span class="nav__logo-text">BrewBucks</span>
+        </a>
+        <p class="footer__tagline">Premium coffee meets Web3 culture.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <a href="shop.html">All Coffee</a>
+          <a href="shop.html#subscriptions">Subscriptions</a>
+          <a href="nft-membership.html">NFT Membership</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Community</h4>
+          <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="#" target="_blank" rel="noopener">Discord</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 BrewBucks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
