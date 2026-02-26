@@ -1,52 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="512" height="512" shape-rendering="crispEdges">
-  <rect width="32" height="32" fill="#0a1520"/>
-  <!-- Steam with lightning -->
-  <rect x="11" y="2" width="1" height="1" fill="rgba(100,240,220,0.4)"/>
-  <rect x="12" y="1" width="1" height="1" fill="rgba(100,240,220,0.3)"/>
-  <rect x="17" y="1" width="1" height="1" fill="rgba(100,240,220,0.3)"/>
-  <rect x="16" y="2" width="1" height="1" fill="rgba(100,240,220,0.4)"/>
-  <rect x="14" y="2" width="1" height="2" fill="rgba(100,240,220,0.35)"/>
-  <!-- Sunglasses -->
-  <rect x="8" y="5" width="4" height="3" fill="#1a1a2e"/>
-  <rect x="9" y="6" width="2" height="1" fill="#00ffcc"/>
-  <rect x="12" y="6" width="4" height="1" fill="#334455"/>
-  <rect x="16" y="5" width="4" height="3" fill="#1a1a2e"/>
-  <rect x="17" y="6" width="2" height="1" fill="#00ffcc"/>
+  <rect width="32" height="32" fill="#0d0b1a"/>
+  <!-- Glow aura -->
+  <rect x="7" y="6" width="1" height="16" fill="rgba(42,191,173,0.08)"/>
+  <rect x="22" y="6" width="1" height="16" fill="rgba(42,191,173,0.06)"/>
+  <!-- Steam - left lightning bolt -->
+  <rect x="10" y="1" width="1" height="1" fill="#50e0d0" opacity="0.6"/>
+  <rect x="11" y="2" width="1" height="1" fill="#40d0c0"/>
+  <rect x="10" y="3" width="1" height="1" fill="#50e0d0"/>
+  <rect x="11" y="4" width="1" height="1" fill="#40d0c0" opacity="0.7"/>
+  <!-- Steam - right lightning bolt -->
+  <rect x="20" y="1" width="1" height="1" fill="#50e0d0" opacity="0.5"/>
+  <rect x="19" y="2" width="1" height="1" fill="#40d0c0"/>
+  <rect x="20" y="3" width="1" height="1" fill="#50e0d0"/>
+  <rect x="19" y="4" width="1" height="1" fill="#40d0c0" opacity="0.6"/>
   <!-- Lid -->
-  <rect x="8" y="8" width="13" height="2" fill="#1a6b5a"/>
-  <rect x="9" y="8" width="11" height="1" fill="#2a9d8f"/>
-  <!-- Mug body — wider, rounder shape -->
-  <rect x="7" y="10" width="15" height="13" fill="#1a8a7a"/>
-  <rect x="8" y="10" width="13" height="13" fill="#2abfad"/>
-  <rect x="8" y="10" width="13" height="1" fill="#3dd9c4"/>
-  <!-- Lightning bolt on mug -->
-  <rect x="14" y="12" width="3" height="1" fill="#ffe44d"/>
-  <rect x="13" y="13" width="3" height="1" fill="#ffe44d"/>
-  <rect x="12" y="14" width="4" height="1" fill="#ffe44d"/>
-  <rect x="14" y="15" width="3" height="1" fill="#ffe44d"/>
-  <rect x="15" y="16" width="3" height="1" fill="#ffe44d"/>
-  <rect x="16" y="17" width="2" height="1" fill="#ffe44d"/>
-  <!-- Lightning glow -->
-  <rect x="11" y="14" width="1" height="1" fill="rgba(255,228,77,0.2)"/>
-  <rect x="18" y="16" width="1" height="1" fill="rgba(255,228,77,0.2)"/>
+  <rect x="9" y="5" width="12" height="2" fill="#165b50"/>
+  <rect x="10" y="5" width="10" height="1" fill="#1a7068"/>
+  <!-- Mug body -->
+  <rect x="8" y="7" width="13" height="15" fill="#146858"/>
+  <rect x="9" y="7" width="11" height="15" fill="#28a898"/>
+  <rect x="9" y="7" width="11" height="1" fill="#48d0be"/>
+  <rect x="10" y="8" width="2" height="13" fill="#3ccebe"/>
+  <!-- Coffee cup logo - steam swoosh -->
+  <rect x="14" y="9" width="1" height="1" fill="#c0f0e8"/>
+  <rect x="15" y="9" width="1" height="1" fill="#ffe44d"/>
+  <rect x="16" y="9" width="1" height="1" fill="#ffe44d" opacity="0.5"/>
+  <!-- Coffee cup logo - cup body -->
+  <rect x="12" y="10" width="5" height="1" fill="#c0f0e8"/>
+  <rect x="12" y="11" width="1" height="2" fill="#c0f0e8"/>
+  <rect x="16" y="11" width="1" height="2" fill="#c0f0e8"/>
+  <rect x="13" y="11" width="3" height="2" fill="#80c8b8"/>
+  <rect x="12" y="13" width="5" height="1" fill="#c0f0e8"/>
+  <!-- Coffee cup logo - handle -->
+  <rect x="17" y="11" width="1" height="2" fill="#c0f0e8"/>
+  <!-- Coffee cup logo - saucer -->
+  <rect x="11" y="14" width="8" height="1" fill="#90d8c8"/>
   <!-- BREWBUCKS text -->
-  <rect x="9" y="20" width="1" height="1" fill="#7de8d8"/>
-  <rect x="11" y="20" width="1" height="1" fill="#7de8d8"/>
-  <rect x="13" y="20" width="1" height="1" fill="#7de8d8"/>
-  <rect x="15" y="20" width="1" height="1" fill="#7de8d8"/>
-  <rect x="17" y="20" width="1" height="1" fill="#7de8d8"/>
-  <rect x="19" y="20" width="1" height="1" fill="#7de8d8"/>
-  <!-- Handle — angular style -->
-  <rect x="22" y="12" width="2" height="1" fill="#1a8a7a"/>
-  <rect x="23" y="13" width="2" height="1" fill="#1a8a7a"/>
-  <rect x="24" y="14" width="1" height="3" fill="#1a8a7a"/>
-  <rect x="23" y="17" width="2" height="1" fill="#1a8a7a"/>
-  <rect x="22" y="18" width="2" height="1" fill="#1a8a7a"/>
-  <rect x="22" y="13" width="1" height="1" fill="#2abfad"/>
-  <rect x="23" y="17" width="1" height="1" fill="#2abfad"/>
+  <rect x="10" y="17" width="1" height="1" fill="#80c8b8"/>
+  <rect x="11" y="17" width="1" height="1" fill="#80c8b8"/>
+  <rect x="12" y="17" width="1" height="1" fill="#80c8b8"/>
+  <rect x="13" y="17" width="1" height="1" fill="#80c8b8"/>
+  <rect x="15" y="17" width="1" height="1" fill="#80c8b8"/>
+  <rect x="16" y="17" width="1" height="1" fill="#80c8b8"/>
+  <rect x="17" y="17" width="1" height="1" fill="#80c8b8"/>
+  <rect x="18" y="17" width="1" height="1" fill="#80c8b8"/>
+  <rect x="19" y="17" width="1" height="1" fill="#80c8b8"/>
+  <!-- Handle -->
+  <rect x="21" y="9" width="2" height="2" fill="#1a7068"/>
+  <rect x="22" y="11" width="2" height="5" fill="#1a7068"/>
+  <rect x="21" y="16" width="2" height="2" fill="#1a7068"/>
+  <rect x="21" y="10" width="1" height="1" fill="#28a898"/>
+  <rect x="21" y="16" width="1" height="1" fill="#28a898"/>
   <!-- Base -->
-  <rect x="6" y="23" width="17" height="2" fill="#1a6b5a"/>
-  <rect x="7" y="23" width="15" height="1" fill="#1a8a7a"/>
+  <rect x="7" y="22" width="15" height="2" fill="#0e4a40"/>
+  <rect x="8" y="22" width="13" height="1" fill="#165b50"/>
   <!-- Shadow -->
-  <rect x="7" y="25" width="17" height="1" fill="rgba(0,0,0,0.3)"/>
+  <rect x="8" y="24" width="15" height="1" fill="rgba(0,0,0,0.25)"/>
 </svg>
