@@ -2401,82 +2401,120 @@ ul {
 }
 
 /* ===========================
-   Footer Token / Contract
+   Buy $BREW Section
    =========================== */
-.footer__token {
-  grid-column: 1 / -1;
+.brew-token {
+  padding: 80px 0;
+  background: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.brew-token::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(212, 165, 116, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.brew-token__inner {
   text-align: center;
-  padding: 24px 0;
-  border-top: 1px solid var(--border-card);
-  margin-top: 40px;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
 }
 
-.footer__token-label {
+.brew-token__badge {
+  display: inline-block;
   font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  background: rgba(212, 165, 116, 0.1);
+  border: 1px solid rgba(212, 165, 116, 0.25);
+  border-radius: 100px;
+  padding: 8px 24px;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
 }
 
-.footer__token-address {
+.brew-token__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.brew-token__subtitle {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.brew-token__subtitle strong {
+  color: var(--accent-primary);
+}
+
+.brew-token__address {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  background: var(--bg-elevated);
+  gap: 12px;
+  background: var(--bg-secondary);
   border: 1px solid var(--border-card);
-  border-radius: 8px;
-  padding: 10px 16px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 14px 20px;
+  margin-bottom: 28px;
   transition: border-color var(--transition-fast);
 }
 
-.footer__token-address:hover {
+.brew-token__address:hover {
   border-color: var(--accent-primary);
 }
 
-.footer__token-address code {
+.brew-token__address code {
   font-family: 'Courier New', monospace;
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: var(--accent-primary);
   word-break: break-all;
   user-select: all;
 }
 
-.footer__token-copy {
+.brew-token__copy {
   background: none;
   border: none;
   color: var(--text-muted);
   cursor: pointer;
-  padding: 2px;
+  padding: 4px;
   display: flex;
   align-items: center;
   transition: color var(--transition-fast);
+  flex-shrink: 0;
 }
 
-.footer__token-copy:hover {
+.brew-token__copy:hover {
   color: var(--accent-primary);
 }
 
-.footer__token-copy.copied {
+.brew-token__copy.copied {
   color: #4ade80;
 }
 
-.footer__token-link {
-  display: inline-block;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  transition: color var(--transition-fast);
-}
-
-.footer__token-link:hover {
-  color: var(--accent-primary);
+.brew-token__btn {
+  font-size: 1.05rem;
+  padding: 16px 40px;
 }
 
 @media (max-width: 480px) {
-  .footer__token-address code {
+  .brew-token__address {
+    padding: 12px 14px;
+    gap: 8px;
+  }
+
+  .brew-token__address code {
     font-size: 0.7rem;
   }
 }
