@@ -2399,3 +2399,84 @@ ul {
 .footer__bottom-links a:hover {
   color: var(--accent-primary);
 }
+
+/* ===========================
+   Footer Token / Contract
+   =========================== */
+.footer__token {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 24px 0;
+  border-top: 1px solid var(--border-card);
+  margin-top: 40px;
+}
+
+.footer__token-label {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer__token-address {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  transition: border-color var(--transition-fast);
+}
+
+.footer__token-address:hover {
+  border-color: var(--accent-primary);
+}
+
+.footer__token-address code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.82rem;
+  color: var(--accent-primary);
+  word-break: break-all;
+  user-select: all;
+}
+
+.footer__token-copy {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  transition: color var(--transition-fast);
+}
+
+.footer__token-copy:hover {
+  color: var(--accent-primary);
+}
+
+.footer__token-copy.copied {
+  color: #4ade80;
+}
+
+.footer__token-link {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.footer__token-link:hover {
+  color: var(--accent-primary);
+}
+
+@media (max-width: 480px) {
+  .footer__token-address code {
+    font-size: 0.7rem;
+  }
+}
