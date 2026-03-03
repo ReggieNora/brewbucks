@@ -1227,28 +1227,14 @@ ul {
 
 .hero__mug-body {
   width: 200px;
-  height: 240px;
-  background: linear-gradient(145deg, #2A2218, #1A1510);
-  border-radius: 20px 20px 40px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative;
-  border: 1px solid var(--border-subtle);
-  box-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.5),
-    0 0 40px rgba(212, 165, 116, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .hero__mug-body--alt {
-  background: linear-gradient(145deg, #1A1A2E, #16161A);
-  border-color: rgba(153, 69, 255, 0.2);
-  box-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.5),
-    0 0 40px rgba(153, 69, 255, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  /* no overrides needed — PNGs carry their own look */
 }
 
 .hero__mug-steam {
@@ -1299,8 +1285,7 @@ ul {
 }
 
 .nft-mug-display__item--1 .hero__mug-body {
-  width: 180px;
-  height: 210px;
+  width: 200px;
 }
 
 .nft-mug-display__item--2 {
@@ -1308,8 +1293,7 @@ ul {
 }
 
 .nft-mug-display__item--2 .hero__mug-body {
-  width: 200px;
-  height: 230px;
+  width: 220px;
 }
 
 .nft-mug-display__item .hero__mug-img {
