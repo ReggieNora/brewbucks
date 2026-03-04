@@ -1305,6 +1305,13 @@ ul {
   font-size: 0.65rem;
 }
 
+.nft-hero__collection-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  filter: drop-shadow(0 16px 48px rgba(0, 0, 0, 0.4));
+}
+
 /* ===========================
    NFT Benefits
    =========================== */
