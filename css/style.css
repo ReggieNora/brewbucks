@@ -513,19 +513,6 @@ ul {
   }
 }
 
-.featured-coffees__showcase {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.featured-coffees__collection-img {
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  filter: drop-shadow(0 16px 48px rgba(0, 0, 0, 0.4));
-}
-
 .coffee-bag-card {
   text-align: center;
   transition: transform var(--transition-base);
