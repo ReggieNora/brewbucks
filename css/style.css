@@ -196,8 +196,9 @@ ul {
   z-index: 101;
 }
 
-.nav__logo-icon {
-  font-size: 1.5rem;
+.nav__logo-img {
+  height: 30px;
+  width: auto;
 }
 
 .nav__links {
